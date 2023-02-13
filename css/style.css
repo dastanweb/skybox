@@ -1,0 +1,277 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* inherit - наследуется от родителя */
+/* !HEADER START */
+header {
+  background-image: url(../images/BG.jpg);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav {
+  width: 75%;
+  height: 40px;
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*! burger none */
+.burger-open,
+.burger-check,
+.burger-close {
+  display: none;
+}
+.nav_logo {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+nav ul {
+  width: 35%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.nav__signin {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.4237px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
+.nav__signin button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.4237px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  border: none;
+  color: #ffffff;
+}
+.nav__signin button:first-child {
+  background-color: inherit;
+  padding: 10px 20px;
+}
+.nav__signin button:last-child {
+  background-color: #ffffff;
+  border-radius: 20px;
+  color: #bb6df3;
+  padding: 10px 40px;
+}
+/*! hero */
+.hero {
+  width: 75%;
+  margin-top: 158px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.hero__right {
+  width: 60%;
+}
+.hero__right img {
+  width: 100%;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+.hero__left {
+  width: 40%;
+  font-size: 18px;
+  color: #3b668d;
+}
+.hero__left h1 {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4em;
+  line-height: 1em;
+}
+.hero__left h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+.hero__left hr {
+  border: 1px solid #3b668d;
+  margin-top: 18px;
+  margin-bottom: 24px;
+}
+.hero__left h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 156%;
+  text-transform: uppercase;
+}
+.hero__left p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.075em;
+  color: #2b4964;
+}
+.hero__left button {
+  background-image: url(../Rectangle\ 1.png);
+  border: none;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 27px;
+  text-align: center;
+  padding: 20px 55px;
+  color: #ffffff;
+  border-radius: 40px;
+  background-size: cover;
+  background-color: transparent;
+  margin-top: 15px;
+}
+/* TODO HEADER FINISH */
+
+/* !start main */
+main {
+  max-width: 1200px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+.main__left {
+  width: 60%;
+  background-image: url(../images/BG.png);
+  background-size: cover;
+}
+.main__left img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.main__right {
+  width: 40%;
+}
+.main__item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: 15px;
+}
+.item-left {
+  background-image: url(../images/Group\ 6.svg);
+  background-size: cover;
+  width: 93px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-left img {
+  width: 50%;
+}
+.item-right {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+.item-right h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  color: #3b668d;
+}
+.item-right p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #2b4964;
+}
+/* !finish main */
+
+@media all and (max-width: 375px) {
+  .nav__logo {
+    font-size: 28px;
+  }
+  nav ul {
+    display: none;
+    background-color: midnightblue;
+    order: 1;
+    position: absolute;
+    top: 50px;
+    width: 150px;
+    height: 170px;
+    right: 0;
+  }
+  .nav__signin {
+    display: none;
+  }
+  .burger-open {
+    display: block;
+    width: 60px;
+    order: 2;
+  }
+  .burger-check {
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 55px;
+    opacity: 0;
+    z-index: 2;
+  }
+  .burger-check:checked + ul {
+    display: block;
+  }
+  .burger-check:checked ~ .burger-close {
+    display: block;
+    font-size: 20px;
+    color: wheat;
+    position: absolute;
+    right: 55px;
+    z-index: 1;
+  }
+}
